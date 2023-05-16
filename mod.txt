@@ -5,6 +5,10 @@
 	"color" : "0.043 0.808 0.6",
 	"image" : "mod.png",
 	"version" : "1.2.5",
+	"updates" : [{
+		"identifier" : "pd2-sentry-tweaks",
+		"host": { "meta": "https://updates.hoppip.at/pd2-sentry-tweaks" }
+	}],
 	"hooks" : [
 		{ "hook_id" : "lib/units/equipment/sentry_gun/sentrygunbrain", "script_path" : "mod.lua" },
 		{ "hook_id" : "lib/units/weapons/sentrygunweapon", "script_path" : "mod.lua" },
