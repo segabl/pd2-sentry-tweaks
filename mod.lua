@@ -37,7 +37,7 @@ elseif RequiredScript == "lib/units/weapons/sentrygunweapon" then
 
 	-- Double sentry ammo (AP uses more ammo, see further below)
 
-	tweak_data.upgrades.sentry_gun_base_ammo = math.max(tweak_data.upgrades.sentry_gun_base_ammo, 200)
+	tweak_data.upgrades.sentry_gun_base_ammo = math.max(tweak_data.upgrades.sentry_gun_base_ammo, 250)
 
 	-- Make sentries able to shoot through bots and hostages
 
@@ -60,7 +60,7 @@ elseif RequiredScript == "lib/units/weapons/sentrygunweapon" then
 
 	local change_ammo = SentryGunWeapon.change_ammo
 	function SentryGunWeapon:change_ammo(amount, ...)
-		change_ammo(self, math.max(amount < 0 and self._criminal_sentry and self._use_armor_piercing and amount * 2 or amount, -self._ammo_total), ...)
+		change_ammo(self, math.max(amount < 0 and self._criminal_sentry and self._use_armor_piercing and amount * 2.5 or amount, -self._ammo_total), ...)
 	end
 
 elseif RequiredScript == "lib/units/beings/player/playerequipment" then
