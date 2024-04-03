@@ -8,4 +8,5 @@ This mod tweaks a few things about sentry guns that personally annoyed me.
 * Actually makes suppressed sentries less likely to be targeted by enemies like the skill description implies
 * Allows sentries to shoot through hostages and bots
 * Stops sentries from aiming at civilians and surrendering or tied down enemies
-* Adds option to place sentries facing towards you when SHIFT is held during placement
+* Adds option to place sentries facing towards you when the sprint button is held during placement
+* Fixes cases of not being able to place any more sentries as client when the host didn't spawn a requested sentry
